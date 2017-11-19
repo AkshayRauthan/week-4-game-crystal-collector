@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crystal Collector Game</title>
+	<!--Referencing the Jquery & other custome js files-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<!--Referencing the reset, bootstrap & custom style sheet classes -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<!--Overall bootstrap grid -->
+
+	<div class="container">
+		
+
+		<!--Bootstrap Jumbotron -->
+		<div class="jumbotron">
+			<h1 class="text-center">Crystal Collector Game!!</h1>
+			<h3 class="text-center">Collect the Cyrstals as per the Instructions to win the game!!</h3>
+		</div>
+
+		<!--Creating the Grid-->
+		<div class="row">
+			<!--creating the left pannel-->
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h3>Play!!</h3>
+					</div>
+
+					<div class="panel-body">
+						<div class="body-spacing">
+							<h4>Match this Score : <span id="random-number"></span></h4>
+						</div>
+						<div class="body-spacing">
+							<img src="assets/images/Citrine.png" id="gem1" class="img-thumbnail">
+							<img src="assets/images/Gem1.png" id="gem2" class="img-thumbnail">
+							<img src="assets/images/Gemstone.png" id="gem3" class="img-thumbnail">
+							<img src="assets/images/Sapphire.jpg" id="gem4" class="img-thumbnail">
+						</div>
+						<div class="body-spacing">
+							<h4>Your Total Score is : <span id="total-score"></span></h4>
+						</div>
+						<div class="body-spacing">
+							<h4>Wins : <span id="wins"></span></h4>
+						</div>
+						<div class="body-spacing">
+							<h4>Losses : <span id="losses"></span></h4>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+
+			<!--creating the right pannel-->
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h3>Plyaing Instructions</h3>
+					</div>
+					<div class="panel-body">
+						<p>You will be given a random number at the start of the game.<br><br>
+						There are four crystals below. By clicking on a crystal you will add a specific amount of points of your total store.<br><br>
+						You iwn the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>
+						The value of each crystal is hidden from you until you click on it.<br><br>
+						Each time when the game starts, the game will change the value of each crystal.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+
+</body>
+</html>
